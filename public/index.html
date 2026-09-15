@@ -1,96 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Slate is a calm weekly planning desk for turning intentions into focused work." />
-    <title>Slate | Weekly planning desk</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <div class="app-shell">
-      <aside class="sidebar" aria-label="Primary navigation">
-        <a class="brand" href="/" aria-label="Slate home">
-          <span class="brand-mark">S</span>
-          <span>slate</span>
-        </a>
-
-        <nav class="nav-list">
-          <a class="nav-item active" href="#today"><span class="nav-icon">◷</span>Today</a>
-          <a class="nav-item" href="#week"><span class="nav-icon">▦</span>My week</a>
-          <a class="nav-item" href="#notes"><span class="nav-icon">⌁</span>Notes</a>
-        </nav>
-
-        <div class="sidebar-bottom">
-          <div class="focus-card">
-            <span class="eyebrow">Daily focus</span>
-            <strong>Make space for the good work.</strong>
-            <span class="focus-line"><span class="focus-dot"></span><span id="focus-progress">3 of 5 tasks done</span></span>
-          </div>
-          <button class="profile-button" type="button"><span class="avatar">P</span><span><strong>Prijun</strong><small>Personal space</small></span><span class="more">•••</span></button>
-        </div>
-      </aside>
-
-      <main class="content" id="today">
-        <header class="topbar">
-          <div>
-            <p class="date-label" id="today-label">Monday, September 15, 2026</p>
-            <h1>Good morning, Prijun <span class="sun">✦</span></h1>
-          </div>
-          <div class="topbar-actions">
-            <button class="icon-button" type="button" aria-label="Search"><span>⌕</span></button>
-            <button class="icon-button notification" type="button" aria-label="Notifications"><span>♢</span><i></i></button>
-            <button class="add-button" type="button" id="open-plan"><span>＋</span> Add plan</button>
-          </div>
-        </header>
-
-        <section class="hero-grid" aria-label="Weekly overview">
-          <div class="welcome-panel">
-            <div>
-              <span class="eyebrow">Your week at a glance</span>
-              <h2>A little progress<br /><em>adds up.</em></h2>
-              <p>Keep your attention on what matters, one thoughtful block at a time.</p>
-            </div>
-            <div class="week-chip"><strong>W38</strong><span>of 52</span></div>
-          </div>
-          <div class="metric-panel">
-            <div class="metric-heading"><span class="eyebrow">Weekly rhythm</span><span class="trend">↗ 12%</span></div>
-            <div class="chart" aria-label="Weekly completion chart">
-              <div class="chart-bar"><span style="height: 42%"></span><small>Mon</small></div>
-              <div class="chart-bar"><span style="height: 64%"></span><small>Tue</small></div>
-              <div class="chart-bar"><span style="height: 53%"></span><small>Wed</small></div>
-              <div class="chart-bar"><span style="height: 78%"></span><small>Thu</small></div>
-              <div class="chart-bar today"><span style="height: 88%"></span><small>Fri</small></div>
-              <div class="chart-bar"><span style="height: 35%"></span><small>Sat</small></div>
-              <div class="chart-bar"><span style="height: 25%"></span><small>Sun</small></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-heading" id="week">
-          <div><span class="eyebrow" id="plans-date">Today's date</span><h2>Today's plans</h2></div>
-          <div class="view-toggle" role="group" aria-label="Plan view"><button class="selected" type="button">List</button><button type="button">Board</button></div>
-        </section>
-
-        <section class="plan-list" id="plan-list" aria-live="polite"></section>
-
-        <section class="notes-section" id="notes">
-          <div class="section-heading compact"><div><span class="eyebrow">A thought for later</span><h2>Quick note</h2></div><span class="note-date">Edited just now</span></div>
-          <textarea id="quick-note" placeholder="Capture an idea before it floats away..." aria-label="Quick note"></textarea>
-        </section>
-      </main>
-    </div>
-
-    <dialog class="plan-dialog" id="plan-dialog">
-      <form method="dialog" id="plan-form">
-        <button class="close-button" value="cancel" aria-label="Close dialog">×</button>
-        <span class="eyebrow">New intention</span>
-        <h2>Add a plan</h2>
-        <label>What would you like to make time for?<input name="title" required maxlength="80" placeholder="e.g. Draft the project brief" /></label>
-        <label>Time estimate<select name="duration"><option value="30 min">30 min</option><option value="1 hour">1 hour</option><option value="2 hours">2 hours</option></select></label>
-        <button class="submit-button" value="default" type="submit">Add to today <span>→</span></button>
-      </form>
-    </dialog>
-    <script src="/app.js?v=2" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Slate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Slate</h1>
+  <p>A quiet place to write down what's on your mind — a shopping list, a study plan, or anything in between.</p>
+  <script src="app.js"></script>
+</body>
 </html>
